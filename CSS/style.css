@@ -1,0 +1,134 @@
+@font-face {
+  font-family: cormorant;
+  src: url(../Assets/fonts/CormorantGaramond-Regular.ttf);
+}
+@font-face {
+  font-family: cormorantbold;
+  src: url(../Assets/fonts/CormorantGaramond-Bold.ttf);
+}
+@font-face {
+  font-family: cormorantitalic;
+  src: url(../Assets/fonts/CormorantGaramond-Italic.ttf);
+}
+
+body {
+  background-color: #eee4dd;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333333;
+}
+
+header {
+  display: block;
+  text-align: center;
+  font-family: cormorantbold;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: cormorant;
+  font-size: 16px;
+  border-top: solid 5px #333333;
+  border-bottom: solid 5px #333333;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 74.219vw 250px;
+  gap: 20px;
+  height: 90vh;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: 17.969vw 17.969vw 17.969vw 17.969vw;
+  gap: 10px;
+  width: 74.063vw;
+}
+
+.articles .caption {
+  grid-column: 1 / span 4;
+  text-align: center;
+  font-family: cormorantbold;
+  font-size: 35px;
+}
+
+.articles img {
+  max-width: 100%;
+  display: block;
+}
+
+.picture {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+
+h3 {
+  font-family: cormorantbold;
+  font-size: 24px;
+}
+
+.articles p {
+  font-family: cormorant;
+  font-size: 16px;
+}
+
+aside {
+  display: grid;
+  grid-template-columns: 10.953vw;
+}
+
+aside div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: cormorantbold;
+}
+h4 {
+  font-size: 19px;
+}
+h5 {
+  font-family: cormorantbold;
+  font-size: 24px;
+}
+
+aside div p {
+  font-size: 50px;
+  border: #333333 solid 7px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 25px 40px;
+}
+
+aside article {
+  border: #333333 solid 7px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 25px 40px;
+}
+
+aside article p {
+  font-family: cormorant;
+  font-size: 16px;
+}
+
+a {
+  font-family: comorant;
+  font-size: 20px;
+  color: #737b80;
+}
+
+aside article:nth-last-child() img {
+  width: 13.047vw;
+  height: 16.7vh;
+}
